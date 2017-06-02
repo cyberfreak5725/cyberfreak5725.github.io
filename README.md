@@ -1,1 +1,114 @@
-# cyberfreak5725.github.io
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title> CHERRY JACKPOT GAME </title>
+   <SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+var scrl = " ENJOY THE GAME!! ";
+function scrlsts() {
+ scrl = scrl.substring(1, scrl.length) + scrl.substring(0, 1);
+ document.title = scrl;
+ setTimeout("scrlsts()", 300);
+ }
+//  End -->
+</script>
+   <style>
+   body{
+        backgound-image:url("https://drive.google.com/open?id=0BzBF4XtYNL72ZnM4M3pIV281a0k");   
+   }
+	.buttonred
+{
+background-color:#d9522c;
+border-left:4px solid #d9522c;
+color:white;
+}
+.buttongreen
+{
+background-color:#009900;
+color:white;
+border-left:4px solid #009900;
+} 
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+</style>
+</head>
+
+<body background="https://drive.google.com/open?id=0BzBF4XtYNL72ZnM4M3pIV281a0k" bgcolor="#FFFF99">
+  <body onLoad="scrlsts()">
+    <b> <u><center> GET THE EQUAL NUMBER OR DIGIT AND WIN !!!</center></u></b>
+    <img src="https://drive.google.com/open?id=0BzBF4XtYNL72ZnM4M3pIV281a0k">
+    <br>
+    <br>
+    <center><font style="comic sans ms" size="20" color="red"> CHERRY JACKPOT </font></center>
+    <br><br>
+    <hr>
+    <center><input type="text" id="demo" value="0">
+    <input type="text" id="demo2" value="0">
+    <input type="text" id="demo3" value="0"><center>
+    <br>
+    
+<center><button class="buttonred" id="Id" onclick="myFunction()" align="center">Try it</button><center> 
+<br>
+   <center><button class="buttongreen" id="Id" onclick="myFunction2()" align="center">RESET</button><center> 
+<br>
+<br>
+ <hr>
+ <p><font style="times new roman" size="14"> NUMBER OF GAMES PLAYED <font></p>
+<p id="outpara2">--</p>
+<p><font style="times new roman" size="14"> YOUR SCORE NOW IS <font></p>
+<p id="outpara">--</p>
+
+<script>
+var point=0;var count=0;
+function myFunction() {
+    count++;
+    var items = Array(10,14,25,98,41,32,87,54,20,5,4,3,2,1,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22);
+    var item = items[Math.floor(Math.random()*items.length)];
+
+if(count!=item)
+{    var x = Math.floor((Math.random() * 10) + 1);
+    var y = Math.floor((Math.random() * 10) + 1);
+    var z = Math.floor((Math.random() * 10) + 1);
+    document.getElementById("demo").value= x;
+    document.getElementById("demo2").value = y;
+    document.getElementById("demo3").value = z;
+    }
+    else if(count==item)
+    {
+     var x = Math.floor((Math.random() * 10) + 1);
+    document.getElementById("demo").value= x;
+    document.getElementById("demo2").value = x;
+    document.getElementById("demo3").value = x;
+    alert("Congrats!!! you won!!");
+       point++;
+    }
+   document.getElementById("outpara").innerHTML=point;
+   document.getElementById("outpara2").innerHTML=count;
+   if(count==1)
+   {
+         alert("MAX LIMIT OF ATTEMPTS IS 100!! BEST OF LUCK");   
+   }
+  }
+
+function myFunction2() {
+    document.getElementById("demo").value= 0;
+    document.getElementById("demo2").value = 0;
+    document.getElementById("demo3").value =0;
+    document.getElementById("outpara").innerHTML=0;
+   document.getElementById("outpara2").innerHTML=0;
+  }
+</script>
+
+<h1><font color="#FF0000" size="+1"><marquee scrollamount="3">This game is made by me using my own raw and crude concepts along with the help of internet and my mentor.</marquee></font></h1>
+<a href="https://cyberfreak5725.github.io/anukul1.github.io/" alink="blue" vlink="purple">Go back to initial page</a>
+   
+</body>
+</html>

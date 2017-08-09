@@ -1,3 +1,3 @@
-name: Anukul chand
-	markdown: kramdown
+name: "Anukul chand"
+	markdown: "kramdown"
 permalink: /blog/:year/:month/:day/:title

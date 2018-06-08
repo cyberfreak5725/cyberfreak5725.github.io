@@ -1,25 +1,188 @@
----
-layout: default
-title: Anukul chand 
----
-<div id="mySidenav" class="sidenav">
-	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
-</div>
-<h1>Hi there, I'm Anukul chand!!</h1>
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-<div class="blurb">
-	<p>I love  <em> CODING </em> Don't trust me!&hearts</p>
-</div>
-<script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
+<!DOCTYPE html>
+<html>
+<title>Anukul Chand</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+.css-typing
+{
+    width: 70em;
+    white-space:nowrap;
+    overflow:hidden;
+    -webkit-animation: type 5s steps(50, end);
+    animation: type 5s steps(50, end);
 }
 
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
+@keyframes type{
+    from { width: 0; }
 }
+
+@-webkit-keyframes type{
+    from { width: 0; }
+}
+</style>
+<body class="w3-pale-blue">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="mypic.jpg" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-search w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#interests" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>INTERESTS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-on w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#interests" class="w3-bar-item w3-button" style="width:25% !important">INTEREST</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Anukul Chand.</h1>
+    <p>Aspiring Programmer and Web Developer.</p>
+    <img src="/home/cyberfreak/Downloads/mypic.jpg" alt="boy" class="w3-image" width="500" height="850">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-black w3-padding-64" id="about">
+    <h2 class="w3-text-black">ABOUT ME :</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>I am currently pursuing B.Tech. in Computer Science and Engineering in <a href="https://www.nitt.edu">NIT Tiruchirappalli </a>and interested in lerning new concepts 
+    	and trends in computer science. I am in fourth semester and an aspiring programmer and web developer.
+    </p>
+    <h3 class="w3-padding-16 w3-text-black">My Skills</h3>
+    
+    
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <p class="w3-wide">PROGRAMMER</p>
+   
+    <p class="w3-wide">Web Design</p>
+   
+    <p class="w3-wide">MS-OFFICE</p>
+
+    
+    </div>
+
+
+    <form method="get" action="Anukul_res.pdf">
+   <button type="submit" class="w3-button w3-light-grey w3-padding-large w3-section"><i class="fa fa-download"></i> Download Resume</button>
+   </form>
+    
+    <div class="w3-padding-5 w3-light-grey">
+    <p class="css-typing"> LANGUAGES KNOWN :  C , CPP , JAVA(beginner), HTML, CSS ,JAVASCRIPT, PYTHON-3, TEX </p>
+  
+     <p class="css-typing">VERSION CONTROL:GIT </p>
+   
+    <p class="css-typing">ENVIRONMENT:LINUX , WINDOWS </p>
+   
+   </div>
+
+   </div>
+    
+    
+    <!-- Testimonials -->
+    <div class="w3-content w3-justify w3-text-black w3-padding-64" id="interests">
+    <h3 class="w3-padding-24 w3-text-black">INTERESTED IN  :</h3> 
+      ** Reading Books <br>
+      ** Competitive Programming <br> 
+      <p class="w3-light-grey w3-justify" align="center">
+          Hackerrank Handle :- <a href="https://www.hackerrank.com/hifun?hr_r=1">here</a>
+          <br>
+          Codechef Handle :- <a href="https://www.codechef.com/users/cyberfreak5725">here</a>
+          <br>
+      </p>
+      ** A great Nature Lover <br>
+      ** Learning New stuffs <br>
+      ** Solving Challenges <br>
+  </div>
+  
+  <!-- 
+  <div class="w3-content w3-justify w3-text-black w3-padding-64" id="projects">
+  <h2 class="w3-padding-24 w3-text-black">My Projects</h2>
+     
+  </div> -->
+
+  <!-- Contact Section -->
+  <div class="w3-content w3-justify w3-text-black w3-padding-64" id="contact">
+    <h2 class="w3-text-black">Contact Me</h2>
+    <div class="w3-content w3-justify w3-text-black w3-padding-64">
+      <p><i class="fa fa-map-marker fa-fw w3-text-grey w3-xxlarge w3-margin-right"></i> Tiruchirappalli, Tamil Nadu</p>
+      <p><i class="fa fa-phone fa-fw w3-text-grey w3-xxlarge w3-margin-right"></i> Phone: 7597552027</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-grey w3-xxlarge w3-margin-right"> </i> Email: anukulchand2@gmail.com</p>
+    </div><br>
+    <p>Lets get in touch. Send me an E-Mail:</p>
+
+    <form method="post" action="acknowledge.php">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" name="name" id="name"></p>
+      <p><input class="w3-input w3-padding-16" type="email" placeholder="Email" name="email" id="email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" name="comments" id="comments"></p>
+      <p>
+        <input class="w3-button w3-light-grey w3-padding-large" type="submit" name="send" value="Send Message">
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <a href="https://www.facebook.com/anukul.chand"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>&nbsp;
+    <a href="https://www.quora.com/profile/Anukul-Chand"><i class="fa fa-quora w3-hover-opacity"></i></a>&nbsp;
+    <a href="https://www.linkedin.com/in/anukul-chand-199369148/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>&nbsp;
+    <a href="https://github.com/cyberfreak5725"><i class="fa fa-github w3-hover-opacity"></i></a>
+    <p class="w3-medium">Made with <font color="red">&hearts;</font> by Cyberfreak</p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAzto9qrSwMCIfk0dPjcfEJ_yRToi1tekE",
+    authDomain: "visiters-86d36.firebaseapp.com",
+    databaseURL: "https://visiters-86d36.firebaseio.com",
+    projectId: "visiters-86d36",
+    storageBucket: "",
+    messagingSenderId: "979025715193"
+  };
+  firebase.initializeApp(config);
 </script>
 
+</body>
+</html>
